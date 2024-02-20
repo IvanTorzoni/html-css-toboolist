@@ -7,15 +7,54 @@
 
 /* header */
   .container-header{
-    height: 150px;
+    height: 120px;
     background-color: #edf2f7;
   }
 
   .logo{
     margin-left: 40%;
-    height: 150px;
+    height: 100px;
   }
 
 /* /header */
 
+/* main */
 
+.main-top{
+    padding: 50px 0 5px;
+}
+
+.container-search{
+    width: 80%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto;
+    background-color: #edf2f7;
+}
+
+.form-control {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 30%;
+    margin-top: 30px;
+    width: 30%;
+  }
+  
+  button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #14aaf5;
+    color: white;
+  }
+
+  .container-list{
+    width: 80%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto;
+    background-color: #edf2f7;
+}
