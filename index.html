@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,63 @@
 
 
 </head>
+
 <body>
     <!-- header -->
     <header>
+        <!-- container for header -->
         <div class="container-header">
-            <img class="logo"  src="./img/logo.png" alt="Logo">
+            <img class="logo" src="./img/logo.png" alt="Logo">
         </div>
+        <!-- /container for header -->
     </header>
     <!-- /header -->
 
     <!-- main -->
-        <main>
-            <!-- distance from header -->
-            <div class="main-top">
-              <!-- Searching bar -->
-                <div class="container-search">
-                    <input class="form-control" type="text" placeholder="es: Fare la spesa...">
-                    <button>Add Task</button>
-                </div>
-                <!-- /Searching bar -->
+    <main>
+        <!-- distance from header -->
+        <div class="main-top">
+            <!-- Searching bar -->
+            <div class="container-search">
+                <input class="form-control" type="text" placeholder="es: Fare la spesa...">
+                <button>Add Task</button>
             </div>
+            <!-- /Searching bar -->
+        </div>
+        <!-- /distance from header -->
 
-            <!-- to do list -->
-            <div>
-                <div class="container-list">
+        <!-- to do list -->
+        <div>
+            <!-- container for nested list -->
+            <div class="container-list">
+                <!-- nested list -->
+                <ul>
+                    <!-- previous task list -->
+                    <ul>
 
+                        <!-- previous tasks title-->
+                        <li class="list-margin font-text-macro-areas">
+                            <strong> &#10148; TASK PRECEDENTI</strong>
+                        </li>
+                        <!-- /previous tasks title-->
 
-                </div>
+                        <!-- previous tasks point-->
+                        <li class="list-point">
+                            <span class="check">&check;</span>
+                            <span class="font-text-single-point task-done">Quarterly Newsletter</span>
+                            <span class="task-type-editorial task-done">Editorial</span>
+                        </li>
+                        <!-- /previous tasks point-->
+                    </ul>
+                    <!-- /previous task list -->
+                </ul>
+                <!-- /nested list -->
             </div>
-        </main>
+        </div>
+        <!-- /container for nested list -->
+    </main>
     <!-- /main -->
-    
+
 </body>
+
 </html>

@@ -4,15 +4,19 @@
     padding: 0;
     box-sizing: border-box;
   }
+/* /reset style*/
 
 /* header */
+
+/* header container */
   .container-header{
     height: 120px;
     background-color: #edf2f7;
   }
 
+/* header logo */
   .logo{
-    margin-left: 40%;
+    margin-left: 38%;
     height: 100px;
   }
 
@@ -20,10 +24,12 @@
 
 /* main */
 
+/* distance from header */
 .main-top{
     padding: 50px 0 5px;
 }
 
+/* container of searching bar */
 .container-search{
     width: 80%;
     height: 100px;
@@ -33,6 +39,7 @@
     background-color: #edf2f7;
 }
 
+/* format of input text */
 .form-control {
     padding: 15px;
     border-radius: 5px;
@@ -42,6 +49,7 @@
     width: 30%;
   }
   
+/* format of button */
   button {
     padding: 15px;
     border-radius: 5px;
@@ -50,11 +58,81 @@
     color: white;
   }
 
-  .container-list{
+/* To do List */
+
+/* Conteiner of to do list*/
+.container-list{
     width: 80%;
-    height: 100px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 1000px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin: 0 auto;
     background-color: #edf2f7;
+}
+
+/* list style*/
+ul{
+    list-style-type: none;
+}
+
+/* macro area titles */
+.list-margin {
+    margin-left: 15%;
+    padding-top: 30px;
+}
+
+/* Font of the macro area title */
+.font-text-macro-areas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #383947;
+}
+
+/* Conteiner of the single point */
+.list-point{
+    background-color: white;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    padding: 10px 0 0 20px;
+    height: 50px;
+}
+
+/* Check */
+.check{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    color: grey;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    vertical-align: middle;
+    padding-top: 3px;
+    padding-left: 8px;
+}
+
+/* font of single points of the list */
+.font-text-single-point{
+    padding-left: 5px;
+    color: #866364;
+}
+
+/* Task type editorial */
+.task-type-editorial{
+    display: inline-block;
+    background-color: #09a9ed;
+    height: 30px;
+    width: 70px;
+    border-radius: 15px;
+    color: white;
+    padding: 4px 4px 3px 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* task done */
+.task-done{
+    text-decoration-line: line-through;
 }
