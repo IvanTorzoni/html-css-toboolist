@@ -3,217 +3,163 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
+ul {
+    list-style-type: none;
+}
 /* /reset style*/
 
 /* header */
-
-/* header container */
-  .container-header{
-    height: 120px;
-    background-color: #edf2f7;
-  }
-
-/* header logo */
-  .logo{
-    text-align: center;
+/* header common */
+.container-header,
+.logo {
     height: 100px;
-  }
+}
+
+.container-header {
+    height: 100px;
+    background-color: #edf2f7;
+    text-align: center;
+    box-shadow: 3px 3px 5px grey;
+}
 
 /* /header */
 
 /* main */
-
-/* distance from header */
-.main-top{
-    padding: 50px 0 5px;
+/* main common - search bar*/
+.container-search,
+.container-list {
+    width: 80%;
+    background-color: #edf2f7;
 }
 
+.form-control,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* /main common - search bar */
+
 /* container of searching bar */
-.container-search{
-    width: 80%;
+.container-search {
     height: 100px;
+    margin: 50px auto 2px;
+    text-align: center;
+    line-height: 100px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin: 0 auto;
-    background-color: #edf2f7;
 }
 
 /* format of input text */
 .form-control {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    margin-left: 30%;
-    margin-top: 30px;
-    width: 30%;
-  }
-  
+    width: 35%;
+}
+
 /* format of button */
-  button {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid gray;
+#task {
     background-color: #14aaf5;
     color: white;
-  }
+}
 
 /* To do List */
-
-/* Conteiner of to do list*/
-.container-list{
-    width: 80%;
-    height: 850px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin: 0 auto;
-    background-color: #edf2f7;
-}
-
-/* list style*/
-ul{
-    list-style-type: none;
-}
-
-/* macro area titles */
-.list-margin {
-    margin-left: 15%;
-    padding-top: 30px;
-}
-
-/* Font of the macro area title */
-.font-text-macro-areas{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #383947;
-}
-
-/* Conteiner of the single point */
-.list-point{
-    background-color: white;
-    margin-right: 10%;
-    margin-top: 20px;
-    margin-left: 15%;
-    border-radius: 10px;
-    padding: 10px 0 0 20px;
-    height: 50px;
-}
-
-/* Check */
-.check{
+/* To do List common*/
+.check, .cross {
     display: inline-block;
     height: 30px;
     width: 30px;
-    color: green;
-    background-color: white;
     border-radius: 50%;
-    border: 1px solid green;
-    vertical-align: middle;
     padding-top: 3px;
     padding-left: 8px;
 }
 
+/* Task types */
+.task-type-editorial, .task-type-q1-goals, .task-type-recruiting, .task-type-mobile, .task-type-website, .task-type-sales{
+    border-radius: 15px;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* /To do List common*/
+
+/* Conteiner of to do list*/
+.container-list {
+    height: 850px;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* style of the macro area title */
+.font-text-macro-areas {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383947;
+    margin-left: 10%;
+    padding-top: 30px;
+}
+
+/* Conteiner of the single point */
+.list-point {
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px 10% 0;
+    padding: 10px 20px;
+}
+
+/* Check */
+.check {
+    color: green;
+    border: 1px solid green;
+}
+
+/* Cross */
+.cross {
+    color: red;
+    border: 1px solid red;
+}
+
 /* font of single points of the list */
-.font-text-single-point{
+.font-text-single-point {
     padding-left: 5px;
-    color: black;
     font-size: 20px;
 }
 
-/* Task type - editorial */
-.task-type-editorial{
-    display: inline-block;
-    background-color: #09a9ed;
-    height: 30px;
-    width: 70px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
-}
-
 /* task done */
-.task-done{
+.task-done {
     text-decoration-line: line-through;
     text-decoration-color: black;
 }
 
-/* Task type - Q1 goals */
-.task-type-q1-goals{
-    display: inline-block;
-    background-color: #a552e4;
-    height: 30px;
-    width: 80px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
+/* Task type - editorial */
+.task-type-editorial {
+    background-color: #09a9ed;
 }
 
-/* Not done */
-.cross{
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    color: red;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid red;
-    vertical-align: middle;
-    padding-top: 3px;
-    padding-left: 8px;
+
+/* Task type - Q1 goals */
+.task-type-q1-goals {
+    background-color: #a552e4;
 }
 
 /* Task type - Recruiting */
-.task-type-recruiting{
-    display: inline-block;
+.task-type-recruiting {
     background-color: #2cc6ab;
-    height: 30px;
-    width: 80px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* Task type - mobile */
-.task-type-mobile{
-    display: inline-block;
+.task-type-mobile {
     background-color: #ff9b00;
-    height: 30px;
-    width: 70px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* Task type - Website */
-.task-type-website{
-    display: inline-block;
+.task-type-website {
     background-color: #ec4a9d;
-    height: 30px;
-    width: 70px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* Task type - Sales */
-.task-type-sales{
-    display: inline-block;
+.task-type-sales {
     background-color: #a3d116;
-    height: 30px;
-    width: 55px;
-    border-radius: 15px;
-    color: white;
-    padding: 4px 4px 3px 4px;
-    text-align: center;
-    vertical-align: middle;
 }

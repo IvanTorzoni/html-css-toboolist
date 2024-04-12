@@ -14,8 +14,8 @@
     <!-- header -->
     <header>
         <!-- container for header -->
-        <div class="container-header logo">
-            <img src="./img/logo.png" alt="Logo">
+        <div class="container-header">
+            <img class="logo" src="./img/logo.png" alt="Logo">
         </div>
         <!-- /container for header -->
     </header>
@@ -23,19 +23,14 @@
 
     <!-- main -->
     <main>
-        <!-- distance from header -->
-        <div class="main-top">
-            <!-- Searching bar -->
-            <div class="container-search">
-                <input class="form-control" type="text" placeholder="es: Fare la spesa...">
-                <button>Add Task</button>
-            </div>
-            <!-- /Searching bar -->
+        <!-- Searching bar -->
+        <div class="container-search">
+            <input class="form-control" type="text" placeholder="es: Fare la spesa...">
+            <button id="task">Add Task</button>
         </div>
-        <!-- /distance from header -->
+        <!-- /Searching bar -->
 
         <!-- to do list -->
-        <div>
             <!-- container for nested list -->
             <div class="container-list">
                 <!-- nested list -->
@@ -45,7 +40,7 @@
                         <ul>
 
                             <!-- previous tasks title-->
-                            <li class="list-margin font-text-macro-areas">
+                            <li class="font-text-macro-areas">
                                 <strong> &#10148; TASK PRECEDENTI</strong>
                             </li>
                             <!-- /previous tasks title-->
@@ -65,7 +60,7 @@
                     <li>
                         <ul>
                             <!-- today tasks title-->
-                            <li class="list-margin font-text-macro-areas">
+                            <li class="font-text-macro-areas">
                                 <strong> &#10148; OGGI</strong>
                             </li>
                             <!-- /today tasks title-->
@@ -114,7 +109,7 @@
                     <li>
                         <ul>
                             <!-- next day tasks title-->
-                            <li class="list-margin font-text-macro-areas">
+                            <li class="font-text-macro-areas">
                                 <strong> &#10148; PROSSIMI GIORNI</strong>
                             </li>
                             <!-- /next tasks title-->
@@ -148,7 +143,7 @@
                             <li class="list-point">
                                 <span class="check">&check;</span>
                                 <span class="font-text-single-point task-done">Review editorial calendar</span>
-                                <span class="task-type-editorial task-done">editorial</span>
+                                <span class="task-type-editorial task-done">Editorial</span>
                             </li>
                             <!-- /Point n. 4 -->
 
@@ -160,7 +155,6 @@
                 </ul>
                 <!-- /nested list -->
             </div>
-        </div>
         <!-- /container for nested list -->
     </main>
     <!-- /main -->
